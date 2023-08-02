@@ -1,0 +1,49 @@
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'src/test/resources/driver'
+    }
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    ext {
+        serenity_version = '2.5.7'
+        serenity_cucumber4_version = '2.5.7'
+        cucumber_version = '6.11.0'
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.4.34")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+
+dependencies {
+    implementation 'net.serenity-bdd:serenity-core:2.5.7'
+    implementation 'net.serenity-bdd:serenity-screenplay:2.5.7'
+    implementation 'net.serenity-bdd:serenity-screenplay-webdriver:2.5.7'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.3.0'
+    implementation 'log4j:log4j:1.2.17'
+    implementation 'net.serenity-bdd:serenity-core:2.5.7'
+    implementation "net.serenity-bdd:serenity-cucumber6:2.5.7"
+    implementation "io.cucumber:cucumber-core:2.5.7"
+    implementation "io.cucumber:cucumber-junit:2.5.7"
+    testImplementation('org.slf4j:slf4j-log4j12:1.7.28')
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+    testImplementation 'junit:junit:4.13.1'
+}
+
+tasks.register('copyDeps', Copy) {
+    into project.projectDir.path + "/src/test/resources/driver"
+}
+test.finalizedBy(aggregate)
+gradle.startParameter.continueOnFailure = true

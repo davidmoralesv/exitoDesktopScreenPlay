@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Ingresar a exito.com, seleccionar categoría y subcategorías y escoger 10 productos de forma aleatoria" skipped="0" tests="1" time="19.25" timestamp="2023-08-01 08:59:45"><testcase name="Cliente1 desistir adjuntar documentos"><error message="invalid selector: Unable to locate an element with the xpath expression (//a[@class, 'campaign_name_bloque_mujer_1') because of the following error:&#10;SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//a[@class, 'campaign_name_bloque_mujer_1')' is not a valid XPath expression.&#10;  (Session info: chrome=115.0.5790.110)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-IC2VHVI', ip: '192.168.1.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\elian\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62994}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6e7acba6d03d4a1cbb7bf776d1d1e806&#10;*** Element info: {Using=xpath, value=(//a[@class, 'campaign_name_bloque_mujer_1')}" type="org.openqa.selenium.InvalidSelectorException">invalid selector: Unable to locate an element with the xpath expression (//a[@class, 'campaign_name_bloque_mujer_1') because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//a[@class, 'campaign_name_bloque_mujer_1')' is not a valid XPath expression.
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-IC2VHVI', ip: '192.168.1.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\elian\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62994}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e7acba6d03d4a1cbb7bf776d1d1e806
+*** Element info: {Using=xpath, value=(//a[@class, 'campaign_name_bloque_mujer_1')}</error><system-err>invalid selector: Unable to locate an element with the xpath expression (//a[@class, 'campaign_name_bloque_mujer_1') because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//a[@class, 'campaign_name_bloque_mujer_1')' is not a valid XPath expression.
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-IC2VHVI', ip: '192.168.1.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\elian\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62994}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e7acba6d03d4a1cbb7bf776d1d1e806
+*** Element info: {Using=xpath, value=(//a[@class, 'campaign_name_bloque_mujer_1')}&#13;
+org.exito.com.tasks.SeleccionarSubcategoria.performAs(SeleccionarSubcategoria.java:39)&#13;
+stepdefinitions.seleccionarProductos.ySeleccionaSubcategoriaAleatoria(seleccionarProductos.java:34)&#13;
+io.cucumber.java.Invoker.doInvoke(Invoker.java:66)&#13;
+io.cucumber.java.Invoker.invoke(Invoker.java:24)&#13;
+io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)&#13;
+io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)&#13;
+io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)&#13;
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)&#13;
+io.cucumber.core.runner.TestStep.run(TestStep.java:64)&#13;
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)&#13;
+io.cucumber.core.runner.TestCase.run(TestCase.java:104)&#13;
+io.cucumber.core.runner.Runner.runPickle(Runner.java:73)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)&#13;
+</system-err></testcase></testsuite>
