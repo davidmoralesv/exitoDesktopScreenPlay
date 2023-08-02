@@ -5,14 +5,9 @@ import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Y;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
-import org.exito.com.tasks.AbrirURL;
-import org.exito.com.tasks.SeleccionarCategoria;
-import org.exito.com.tasks.SeleccionarSubcategoria;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.exito.com.tasks.*;
 
 public class seleccionarProductos {
-    Logger logger = LoggerFactory.getLogger(seleccionarProductos.class);
 
     @Before
     public void setStage() {
@@ -24,13 +19,28 @@ public class seleccionarProductos {
         OnStage.theActorCalled("usuario").wasAbleTo(AbrirURL.abrir());
     }
 
-    @Y("^selecciona la categoria (.*) de forma aleatoria")
-    public void ySeleccionaCategoriaAleatoria(String nombreCategoria) {
+    @Y("^selecciona la categoria (.*)")
+    public void SeleccionaCategoriaAleatoria(String nombreCategoria) {
         OnStage.theActorCalled("usuario").wasAbleTo(SeleccionarCategoria.seleccionar(nombreCategoria));
     }
 
-    @Y("^selecciona la subcategoria (.*) de forma aleatoria")
-    public void ySeleccionaSubcategoriaAleatoria(String nombreSubcategoria) {
-        OnStage.theActorCalled("usuario").wasAbleTo(SeleccionarSubcategoria.seleccionar(nombreSubcategoria));
+    @Y("^selecciona la subcategoria")
+    public void SeleccionaSubcategoriaAleatoria() {
+        OnStage.theActorCalled("usuario").wasAbleTo(SeleccionarSubcategoria.seleccionar());
+    }
+
+    @Y("^selecciona un producto aleatoriamente")
+    public void SeleccionaUnProductoAleatoriamente() {
+        OnStage.theActorCalled("usuario").wasAbleTo(SeleccionarUnProductoAleatoriamente.seleccionar());
+    }
+
+    @Y("^agregar el producto al carrito y agregar las unidades aleatoriamente")
+    public void AgregarProductoAlCarritoYAgregarUnidades() {
+        OnStage.theActorCalled("usuario").wasAbleTo(AgregarAlCarritoYSeleccionarUnidades.seleccionar());
+    }
+
+    @Y("^verifica los productos en el carrito de compras")
+    public void verificarProductosEnElCarritoDeComprassss() {
+        OnStage.theActorCalled("usuario").wasAbleTo(VerificarProductosEnElCarrito.seleccionar());
     }
 }

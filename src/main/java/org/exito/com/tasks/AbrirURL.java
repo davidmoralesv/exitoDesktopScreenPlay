@@ -24,7 +24,7 @@ public class AbrirURL implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         String strUrl = obtenerUrlExito();
-        actor.wasAbleTo(Open.url(strUrl), WaitUntil.the(StoreFrontPage.logoExito, isVisible()));
+        actor.wasAbleTo(Open.url(strUrl), WaitUntil.the(StoreFrontPage.LOGO_EXITO, isVisible()));
 
         logger.info("Pagina {} cargada con exito.", strUrl);
 

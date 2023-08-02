@@ -29,9 +29,9 @@ public class SeleccionarCategoria implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
 
-        actor.attemptsTo(WaitUntil.the(StoreFrontPage.categoria.of(this.nombreCategoria), isVisible()),
-                Scroll.to(StoreFrontPage.categoria.of(this.nombreCategoria)));
-        actor.attemptsTo(Click.on(StoreFrontPage.categoria.of(this.nombreCategoria)));
+        actor.attemptsTo(WaitUntil.the(StoreFrontPage.CATEGORIA_LINK.of(this.nombreCategoria), isVisible()),
+                Scroll.to(StoreFrontPage.CATEGORIA_LINK.of(this.nombreCategoria)));
+        actor.attemptsTo(Click.on(StoreFrontPage.CATEGORIA_LINK.of(this.nombreCategoria)));
 
         logger.info("Categoria {} seleccionada", this.nombreCategoria);
     }
