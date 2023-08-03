@@ -1,8 +1,5 @@
 repositories {
     mavenCentral()
-    flatDir {
-        dirs 'src/test/resources/driver'
-    }
 }
 
 buildscript {
@@ -33,11 +30,13 @@ dependencies {
     implementation 'net.serenity-bdd:serenity-screenplay-webdriver:2.5.7'
     implementation 'io.github.bonigarcia:webdrivermanager:5.3.0'
     implementation 'log4j:log4j:1.2.17'
+    implementation 'org.slf4j:slf4j-api:1.7.32'
     implementation 'net.serenity-bdd:serenity-core:2.5.7'
     implementation "net.serenity-bdd:serenity-cucumber6:2.5.7"
     implementation "io.cucumber:cucumber-core:2.5.7"
     implementation "io.cucumber:cucumber-junit:2.5.7"
-    testImplementation('org.slf4j:slf4j-log4j12:1.7.28')
+    implementation "net.serenity-bdd:serenity-ensure:2.5.7"
+    testImplementation('org.slf4j:slf4j-simple:1.7.30')
     testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
     testImplementation 'junit:junit:4.13.1'
 }

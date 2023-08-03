@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Producto {
 
-    private static XProducto producto = new XProducto();
+    private static final XProducto producto = new XProducto();
 
     public static String getNombre() {
         return producto.getNombre();

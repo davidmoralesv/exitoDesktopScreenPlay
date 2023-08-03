@@ -19,6 +19,11 @@ public class seleccionarProductos {
         OnStage.theActorCalled("usuario").wasAbleTo(AbrirURL.abrir());
     }
 
+    @Y("^vacia el carrito")
+    public void vaciarElCarrito() {
+        OnStage.theActorCalled("usuario").wasAbleTo(VaciarCarrito.vaciar());
+    }
+
     @Y("^selecciona la categoria (.*)")
     public void SeleccionaCategoriaAleatoria(String nombreCategoria) {
         OnStage.theActorCalled("usuario").wasAbleTo(SeleccionarCategoria.seleccionar(nombreCategoria));
@@ -43,4 +48,6 @@ public class seleccionarProductos {
     public void verificarProductosEnElCarritoDeComprassss() {
         OnStage.theActorCalled("usuario").wasAbleTo(VerificarProductosEnElCarrito.seleccionar());
     }
+
+
 }

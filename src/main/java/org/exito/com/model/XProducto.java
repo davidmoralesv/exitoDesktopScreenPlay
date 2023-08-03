@@ -9,13 +9,6 @@ public class XProducto {
 
     public XProducto() {
     }
-
-    public XProducto(String nombre, int cantidad, double precio) {
-        this.nombre = nombre;
-        this.cantidad = cantidad;
-        this.precio = precio;
-    }
-
     public String getNombre() {
         return nombre;
     }
