@@ -24,25 +24,25 @@ apply plugin: 'net.serenity-bdd.aggregator'
 compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
 
-dependencies {
-    implementation 'net.serenity-bdd:serenity-core:2.5.7'
-    implementation 'net.serenity-bdd:serenity-screenplay:2.5.7'
-    implementation 'net.serenity-bdd:serenity-screenplay-webdriver:2.5.7'
-    implementation 'io.github.bonigarcia:webdrivermanager:5.3.0'
-    implementation 'log4j:log4j:1.2.17'
-    implementation 'org.slf4j:slf4j-api:1.7.32'
-    implementation 'net.serenity-bdd:serenity-core:2.5.7'
-    implementation "net.serenity-bdd:serenity-cucumber6:2.5.7"
-    implementation "io.cucumber:cucumber-core:2.5.7"
-    implementation "io.cucumber:cucumber-junit:2.5.7"
-    implementation "net.serenity-bdd:serenity-ensure:2.5.7"
-    testImplementation('org.slf4j:slf4j-simple:1.7.30')
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
-    testImplementation 'junit:junit:4.13.1'
+ext {
+    serenityVersion = "3.6.22"
+    serenityCucumberVersion = "3.6.22"
+    slf4jSimpleVersion = "2.0.7"
+    junitVersion = "4.13.2"
 }
 
-tasks.register('copyDeps', Copy) {
-    into project.projectDir.path + "/src/test/resources/driver"
+dependencies {
+    implementation group: 'junit', name: 'junit', version: "${junitVersion}"
+    implementation group: 'net.serenity-bdd', name: 'serenity-junit', version: "${serenityVersion}"
+    implementation group: 'net.serenity-bdd', name: 'serenity-core', version: "${serenityVersion}"
+    implementation group: 'net.serenity-bdd', name: 'serenity-cucumber', version: "${serenityCucumberVersion}"
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: "${serenityVersion}"
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: "${serenityVersion}"
+    implementation group: 'org.slf4j', name: 'slf4j-simple', version: "${slf4jSimpleVersion}"
+    testImplementation group: 'junit', name: 'junit', version: "${junitVersion}"
+    implementation "net.serenity-bdd:serenity-ensure:${serenityVersion}"
 }
+
+
 test.finalizedBy(aggregate)
 gradle.startParameter.continueOnFailure = true
