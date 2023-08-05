@@ -1,5 +1,6 @@
 package org.exito.com.model;
 
+@SuppressWarnings("all")
 public class XProducto {
     private String nombre;
     private Integer cantidad;

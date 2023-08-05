@@ -2,9 +2,22 @@
 
 Característica: Ingresar a exito.com, seleccionar categoría y subcategorías y escoger 10 productos de forma aleatoria
 
-  Escenario: Cliente1_desistirAdjuntarDocumentos
+  Escenario: Seleccionar 5 productos y verificar en el carrito de compras nombre, cantidad, total
     Dado que se ingresa a exito.com
-    Y selecciona la categoria Moda y accesorios de forma aleatoria
-    Y selecciona la subcategoria  Zapatos de forma aleatoria
+    Y vacia el carrito
+    Y selecciona la categoria Televisores
+    Y selecciona la subcategoria
+    Y selecciona un producto aleatoriamente
+    Y agregar el producto al carrito y agregar las unidades aleatoriamente
+    Y selecciona un producto aleatoriamente
+    Y agregar el producto al carrito y agregar las unidades aleatoriamente
+    Y selecciona un producto aleatoriamente
+    Y agregar el producto al carrito y agregar las unidades aleatoriamente
+    Y selecciona un producto aleatoriamente
+    Y agregar el producto al carrito y agregar las unidades aleatoriamente
+    Y selecciona un producto aleatoriamente
+    Y agregar el producto al carrito y agregar las unidades aleatoriamente
+    Y verifica los productos en el carrito de compras
+
 
 

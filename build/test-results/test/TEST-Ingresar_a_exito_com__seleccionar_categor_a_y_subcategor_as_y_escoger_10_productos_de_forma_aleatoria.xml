@@ -1,154 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Ingresar_a_exito_com__seleccionar_categor_a_y_subcategor_as_y_escoger_10_productos_de_forma_aleatoria" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-08-02T01:59:45" hostname="DESKTOP-IC2VHVI" time="20.142">
+<testsuite name="Ingresar_a_exito_com__seleccionar_categor_a_y_subcategor_as_y_escoger_10_productos_de_forma_aleatoria" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-08-05T13:48:53" hostname="DDEJUANES" time="159.424">
   <properties/>
-  <testcase name="Cliente1_desistirAdjuntarDocumentos" classname="Ingresar_a_exito_com__seleccionar_categor_a_y_subcategor_as_y_escoger_10_productos_de_forma_aleatoria" time="20.142">
-    <failure message="org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression (//a[@class, 'campaign_name_bloque_mujer_1') because of the following error:&#10;SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//a[@class, 'campaign_name_bloque_mujer_1')' is not a valid XPath expression.&#10;  (Session info: chrome=115.0.5790.110)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-IC2VHVI', ip: '192.168.1.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\elian\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62994}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6e7acba6d03d4a1cbb7bf776d1d1e806&#10;*** Element info: {Using=xpath, value=(//a[@class, 'campaign_name_bloque_mujer_1')}" type="org.openqa.selenium.InvalidSelectorException">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression (//a[@class, 'campaign_name_bloque_mujer_1') because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//a[@class, 'campaign_name_bloque_mujer_1')' is not a valid XPath expression.
-  (Session info: chrome=115.0.5790.110)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-IC2VHVI', ip: '192.168.1.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\elian\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62994}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6e7acba6d03d4a1cbb7bf776d1d1e806
-*** Element info: {Using=xpath, value=(//a[@class, 'campaign_name_bloque_mujer_1')}
-	at java.base@11.0.19/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base@11.0.19/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base@11.0.19/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base@11.0.19/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at app//org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at app//net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
-	at app//net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:25)
-	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.getResolvedElement(WebElementFacadeImpl.java:231)
-	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:226)
-	at app//net.thucydides.core.webdriver.javascript.JavascriptExecutorFacade.webElementOrPrimitiveTypeOf(JavascriptExecutorFacade.java:88)
-	at app//net.thucydides.core.webdriver.javascript.JavascriptExecutorFacade.lambda$extractedWebElementsAndPrimitiveTypesFrom$0(JavascriptExecutorFacade.java:82)
-	at java.base@11.0.19/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.19/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
-	at java.base@11.0.19/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base@11.0.19/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base@11.0.19/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
-	at java.base@11.0.19/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base@11.0.19/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
-	at app//net.thucydides.core.webdriver.javascript.JavascriptExecutorFacade.extractedWebElementsAndPrimitiveTypesFrom(JavascriptExecutorFacade.java:83)
-	at app//net.thucydides.core.webdriver.javascript.JavascriptExecutorFacade.executeScript(JavascriptExecutorFacade.java:71)
-	at app//net.serenitybdd.core.pages.PageObject.evaluateJavascript(PageObject.java:1243)
-	at app//net.serenitybdd.screenplay.actions.ScrollTo.performScrollTo(ScrollTo.java:23)
-	at app//net.serenitybdd.screenplay.actions.ScrollToTarget.performAs(ScrollToTarget.java:14)
-	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:261)
-	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:242)
-	at app//net.serenitybdd.screenplay.Actor.performWithoutReporting(Actor.java:226)
-	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:185)
-	at app//org.exito.com.tasks.SeleccionarSubcategoria.performAs(SeleccionarSubcategoria.java:39)
-	at app//org.exito.com.tasks.SeleccionarSubcategoria$ByteBuddy$RGAaaSPs.performAs$accessor$j1h69eiF(Unknown Source)
-	at java.base@11.0.19/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.19/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.19/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.19/java.lang.reflect.Method.invoke(Method.java:566)
-	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
-	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
-	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
-	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
-	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
-	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
-	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at app//org.exito.com.tasks.SeleccionarSubcategoria$ByteBuddy$RGAaaSPs.performAs(Unknown Source)
-	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:261)
-	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:242)
-	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:187)
-	at app//net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:174)
-	at app//stepdefinitions.seleccionarProductos.ySeleccionaSubcategoriaAleatoria(seleccionarProductos.java:34)
-	at ✽.selecciona la subcategoria  Zapatos de forma aleatoria(file:///C:/repos/ExitoTest/src/test/resources/features/seleccionarProductos.feature:8)
+  <testcase name="Seleccionar_5_productos_y_verificar_en_el_carrito_de_compras_nombre__cantidad__total" classname="Ingresar_a_exito_com__seleccionar_categor_a_y_subcategor_as_y_escoger_10_productos_de_forma_aleatoria" time="159.424">
+    <failure message="java.lang.AssertionError: &#10;Expected: an element that is present&#10;     but: no matching element found by [Boton Agregar al Carrito located with: //div[contains(@class,'productSummaryBuyButtonProductDetail')]//span[text()='Agregar']] was not present" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: an element that is present
+     but: no matching element found by [Boton Agregar al Carrito located with: //div[contains(@class,'productSummaryBuyButtonProductDetail')]//span[text()='Agregar']] was not present
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:395)
+	at net.serenitybdd.screenplay.waits.WaitUntilTargetIsReady.performAs(WaitUntilTargetIsReady.java:30)
+	at net.serenitybdd.screenplay.waits.WaitUntilTargetIsReady$ByteBuddy$OenuH0um.performAs$accessor$i2r1xWGC(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor56.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:518)
+	at net.thucydides.core.steps.StepInterceptor.runBaseObjectMethod(StepInterceptor.java:412)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:84)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.waits.WaitUntilTargetIsReady$ByteBuddy$OenuH0um.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:296)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:275)
+	at net.serenitybdd.screenplay.Actor.performSilently(Actor.java:254)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:211)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at org.exito.com.tasks.AgregarAlCarritoYSeleccionarUnidades.performAs(AgregarAlCarritoYSeleccionarUnidades.java:46)
+	at org.exito.com.tasks.AgregarAlCarritoYSeleccionarUnidades$ByteBuddy$HlcUq42u.performAs$accessor$irEl6InC(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:518)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:498)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:211)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:198)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:86)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at org.exito.com.tasks.AgregarAlCarritoYSeleccionarUnidades$ByteBuddy$HlcUq42u.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:296)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:275)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:193)
+	at stepdefinitions.seleccionarProductos.AgregarProductoAlCarritoYAgregarUnidades(seleccionarProductos.java:44)
+	at ✽.agregar el producto al carrito y agregar las unidades aleatoriamente(file:///C:/repos/ExitoScreenPlayDesktop/src/test/resources/features/seleccionarProductos.feature:17)
 </failure>
   </testcase>
   <system-out><![CDATA[
-Escenario: Cliente1_desistirAdjuntarDocumentos                   ?[90m# src/test/resources/features/seleccionarProductos.feature:5?[0m
-  ?[32mDado ?[0m?[32mque se ingresa a exito.com?[0m                                ?[90m# stepdefinitions.seleccionarProductos.queSeIngresaAExitoCom()?[0m
-  ?[32mY ?[0m?[32mselecciona la categoria ?[0m?[32m?[1mModa y accesorios?[0m?[32m de forma aleatoria?[0m ?[90m# stepdefinitions.seleccionarProductos.ySeleccionaCategoriaAleatoria(java.lang.String)?[0m
-  ?[31mY ?[0m?[31mselecciona la subcategoria ?[0m?[31m?[1m Zapatos?[0m?[31m de forma aleatoria?[0m       ?[90m# stepdefinitions.seleccionarProductos.ySeleccionaSubcategoriaAleatoria(java.lang.String)?[0m
-      ?[31morg.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression (//a[@class, 'campaign_name_bloque_mujer_1') because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//a[@class, 'campaign_name_bloque_mujer_1')' is not a valid XPath expression.
-  (Session info: chrome=115.0.5790.110)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-IC2VHVI', ip: '192.168.1.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\elian\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62994}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6e7acba6d03d4a1cbb7bf776d1d1e806
-*** Element info: {Using=xpath, value=(//a[@class, 'campaign_name_bloque_mujer_1')}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
-	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:25)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.getResolvedElement(WebElementFacadeImpl.java:231)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:226)
-	at net.thucydides.core.webdriver.javascript.JavascriptExecutorFacade.webElementOrPrimitiveTypeOf(JavascriptExecutorFacade.java:88)
-	at net.thucydides.core.webdriver.javascript.JavascriptExecutorFacade.lambda$extractedWebElementsAndPrimitiveTypesFrom$0(JavascriptExecutorFacade.java:82)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
-	at net.thucydides.core.webdriver.javascript.JavascriptExecutorFacade.extractedWebElementsAndPrimitiveTypesFrom(JavascriptExecutorFacade.java:83)
-	at net.thucydides.core.webdriver.javascript.JavascriptExecutorFacade.executeScript(JavascriptExecutorFacade.java:71)
-	at net.serenitybdd.core.pages.PageObject.evaluateJavascript(PageObject.java:1243)
-	at net.serenitybdd.screenplay.actions.ScrollTo.performScrollTo(ScrollTo.java:23)
-	at net.serenitybdd.screenplay.actions.ScrollToTarget.performAs(ScrollToTarget.java:14)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:261)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:242)
-	at net.serenitybdd.screenplay.Actor.performWithoutReporting(Actor.java:226)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:185)
-	at org.exito.com.tasks.SeleccionarSubcategoria.performAs(SeleccionarSubcategoria.java:39)
-	at org.exito.com.tasks.SeleccionarSubcategoria$ByteBuddy$RGAaaSPs.performAs$accessor$j1h69eiF(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+Escenario: Seleccionar 5 productos y verificar en el carrito de compras nombre, cantidad, total ?[90m# src/test/resources/features/seleccionarProductos.feature:5?[0m
+  ?[32mDado ?[0m?[32mque se ingresa a exito.com?[0m                                                               ?[90m# stepdefinitions.seleccionarProductos.queSeIngresaAExitoCom()?[0m
+  ?[32mY ?[0m?[32mvacia el carrito?[0m                                                                            ?[90m# stepdefinitions.seleccionarProductos.vaciarElCarrito()?[0m
+  ?[32mY ?[0m?[32mselecciona la categoria ?[0m?[32m?[1mTelevisores?[0m                                                         ?[90m# stepdefinitions.seleccionarProductos.SeleccionaCategoriaAleatoria(java.lang.String)?[0m
+  ?[32mY ?[0m?[32mselecciona la subcategoria?[0m                                                                  ?[90m# stepdefinitions.seleccionarProductos.SeleccionaSubcategoriaAleatoria()?[0m
+  ?[32mY ?[0m?[32mselecciona un producto aleatoriamente?[0m                                                       ?[90m# stepdefinitions.seleccionarProductos.SeleccionaUnProductoAleatoriamente()?[0m
+  ?[32mY ?[0m?[32magregar el producto al carrito y agregar las unidades aleatoriamente?[0m                        ?[90m# stepdefinitions.seleccionarProductos.AgregarProductoAlCarritoYAgregarUnidades()?[0m
+  ?[32mY ?[0m?[32mselecciona un producto aleatoriamente?[0m                                                       ?[90m# stepdefinitions.seleccionarProductos.SeleccionaUnProductoAleatoriamente()?[0m
+  ?[32mY ?[0m?[32magregar el producto al carrito y agregar las unidades aleatoriamente?[0m                        ?[90m# stepdefinitions.seleccionarProductos.AgregarProductoAlCarritoYAgregarUnidades()?[0m
+  ?[32mY ?[0m?[32mselecciona un producto aleatoriamente?[0m                                                       ?[90m# stepdefinitions.seleccionarProductos.SeleccionaUnProductoAleatoriamente()?[0m
+  ?[32mY ?[0m?[32magregar el producto al carrito y agregar las unidades aleatoriamente?[0m                        ?[90m# stepdefinitions.seleccionarProductos.AgregarProductoAlCarritoYAgregarUnidades()?[0m
+  ?[32mY ?[0m?[32mselecciona un producto aleatoriamente?[0m                                                       ?[90m# stepdefinitions.seleccionarProductos.SeleccionaUnProductoAleatoriamente()?[0m
+  ?[31mY ?[0m?[31magregar el producto al carrito y agregar las unidades aleatoriamente?[0m                        ?[90m# stepdefinitions.seleccionarProductos.AgregarProductoAlCarritoYAgregarUnidades()?[0m
+      ?[31mjava.lang.AssertionError: 
+Expected: an element that is present
+     but: no matching element found by [Boton Agregar al Carrito located with: //div[contains(@class,'productSummaryBuyButtonProductDetail')]//span[text()='Agregar']] was not present
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:395)
+	at net.serenitybdd.screenplay.waits.WaitUntilTargetIsReady.performAs(WaitUntilTargetIsReady.java:30)
+	at net.serenitybdd.screenplay.waits.WaitUntilTargetIsReady$ByteBuddy$OenuH0um.performAs$accessor$i2r1xWGC(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor56.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:518)
+	at net.thucydides.core.steps.StepInterceptor.runBaseObjectMethod(StepInterceptor.java:412)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:84)
 	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at org.exito.com.tasks.SeleccionarSubcategoria$ByteBuddy$RGAaaSPs.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:261)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:242)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:187)
-	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:174)
-	at stepdefinitions.seleccionarProductos.ySeleccionaSubcategoriaAleatoria(seleccionarProductos.java:34)
-	at âœ½.selecciona la subcategoria  Zapatos de forma aleatoria(file:///C:/repos/ExitoTest/src/test/resources/features/seleccionarProductos.feature:8)
+	at net.serenitybdd.screenplay.waits.WaitUntilTargetIsReady$ByteBuddy$OenuH0um.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:296)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:275)
+	at net.serenitybdd.screenplay.Actor.performSilently(Actor.java:254)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:211)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at org.exito.com.tasks.AgregarAlCarritoYSeleccionarUnidades.performAs(AgregarAlCarritoYSeleccionarUnidades.java:46)
+	at org.exito.com.tasks.AgregarAlCarritoYSeleccionarUnidades$ByteBuddy$HlcUq42u.performAs$accessor$irEl6InC(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:518)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:498)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:211)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:198)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:86)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at org.exito.com.tasks.AgregarAlCarritoYSeleccionarUnidades$ByteBuddy$HlcUq42u.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:296)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:275)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:193)
+	at stepdefinitions.seleccionarProductos.AgregarProductoAlCarritoYAgregarUnidades(seleccionarProductos.java:44)
+	at âœ½.agregar el producto al carrito y agregar las unidades aleatoriamente(file:///C:/repos/ExitoScreenPlayDesktop/src/test/resources/features/seleccionarProductos.feature:17)
 ?[0m
+  ?[36mY ?[0m?[36mselecciona un producto aleatoriamente?[0m                                                       ?[90m# stepdefinitions.seleccionarProductos.SeleccionaUnProductoAleatoriamente()?[0m
+  ?[36mY ?[0m?[36magregar el producto al carrito y agregar las unidades aleatoriamente?[0m                        ?[90m# stepdefinitions.seleccionarProductos.AgregarProductoAlCarritoYAgregarUnidades()?[0m
+  ?[36mY ?[0m?[36mverifica los productos en el carrito de compras?[0m                                             ?[90m# stepdefinitions.seleccionarProductos.verificarProductosEnElCarritoDeComprassss()?[0m
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 49838
+  <system-err><![CDATA[[Test worker] INFO  - ----------------
+- TEST STARTED -
+----------------
+
+Seleccionar 5 productos y verificar en el carrito de compras nombre, cantidad, total(ingresar-a-exito.com--seleccionar-categoría-y-subcategorías-y-escoger-10-productos-de-forma-aleatoria;seleccionar-5-productos-y-verificar-en-el-carrito-de-compras-nombre--cantidad--total)
+----------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*, --disable-geolocation, --incognito, --start-maximized], extensions: []}}
+Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 40420
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1690941589.474][WARNING]: This version of ChromeDriver has not been tested with Chrome version 115.
-ago. 01, 2023 8:59:49 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
+[1691243338.780][WARNING]: This version of ChromeDriver has not been tested with Chrome version 115.
+ago 05, 2023 8:48:59 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 115, so returning the closest version found: 111
+[Test worker] INFO org.exito.com.tasks.AbrirURL - Pagina https://www.exito.com/ cargada con exito.
+[Test worker] INFO org.exito.com.tasks.SeleccionarCategoria - Categoria Televisores seleccionada
+[Test worker] INFO org.exito.com.tasks.SeleccionarSubcategoria - Categoria aleatoria seleccionada
+[Test worker] INFO org.exito.com.tasks.AgregarAlCarritoYSeleccionarUnidades - Se agregó correctamente el producto al carrito de compra
+[Test worker] INFO org.exito.com.tasks.AgregarAlCarritoYSeleccionarUnidades - Se agregó correctamente el producto al carrito de compra
+[Test worker] INFO org.exito.com.tasks.AgregarAlCarritoYSeleccionarUnidades - Se agregó correctamente el producto al carrito de compra
+[Test worker] ERROR  - ---------------
+- TEST FAILED -
+---------------
+
+Seleccionar 5 productos y verificar en el carrito de compras nombre, cantidad, total
+---------------
+[Test worker] ERROR  -     Test failed at step: Y agregar el producto al carrito y agregar las unidades aleatoriamente
+[Test worker] ERROR  -     Expected: an element that is present but: no matching element found by [Boton Agregar al Carrito located with: //div[contains(@class,'productSummaryBuyButtonProductDetail')]//span[text()='Agregar']] was not present
 ]]></system-err>
 </testsuite>
