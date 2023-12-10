@@ -12,7 +12,7 @@ pipeline{
 		 	steps {
 				 checkout([$class: 'GitSCM', branches: [[name: "master"]],
                                           doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [
-                                        [credentialsId: "davidmoralv", url: "https://github.com/davidmoralesv/exitoDesktopScreenPlay.git"]
+                                        [url: "https://github.com/davidmoralesv/exitoDesktopScreenPlay.git"]
                                 ]])
 			}
 		}
