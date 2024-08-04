@@ -1,48 +1,63 @@
-repositories {
-    mavenCentral()
-}
-
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    ext {
-        serenity_version = '2.5.7'
-        serenity_cucumber4_version = '2.5.7'
-        cucumber_version = '6.11.0'
-    }
-    dependencies {
-        classpath("net.serenity-bdd:serenity-gradle-plugin:2.4.34")
-    }
-}
-
+version '1.0'
+apply plugin: 'groovy'
 apply plugin: 'java'
 apply plugin: 'eclipse'
-apply plugin: 'idea'
-apply plugin: 'net.serenity-bdd.aggregator'
+apply plugin: 'application'
+apply plugin: 'java-library'
+apply plugin: 'maven-publish'
+apply plugin: "net.serenity-bdd.serenity-gradle-plugin"
 
 compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
 
-ext {
-    serenityVersion = "3.6.22"
-    serenityCucumberVersion = "3.6.22"
-    slf4jSimpleVersion = "2.0.7"
-    junitVersion = "4.13.2"
+def versionSerenity='4.0.12'
+def versionApachePoi='5.2.2'
+def versionApacheCXF = '3.4.4'
+def versionCucumber = '4.0.12'
+
+repositories{
+    mavenCentral()
+}
+buildscript{
+repositories{
+    maven{
+        url "https://plugins.gradle.org/m2/"
+    }
+}
+    dependencies{
+        classpath "net.serenity-bdd:serenity-gradle-plugin:4.0.12"
+    }
 }
 
 dependencies {
-    implementation group: 'junit', name: 'junit', version: "${junitVersion}"
-    implementation group: 'net.serenity-bdd', name: 'serenity-junit', version: "${serenityVersion}"
-    implementation group: 'net.serenity-bdd', name: 'serenity-core', version: "${serenityVersion}"
-    implementation group: 'net.serenity-bdd', name: 'serenity-cucumber', version: "${serenityCucumberVersion}"
-    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: "${serenityVersion}"
-    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: "${serenityVersion}"
-    implementation group: 'org.slf4j', name: 'slf4j-simple', version: "${slf4jSimpleVersion}"
-    testImplementation group: 'junit', name: 'junit', version: "${junitVersion}"
-    implementation "net.serenity-bdd:serenity-ensure:${serenityVersion}"
+    implementation "net.serenity-bdd:serenity-cucumber:${versionCucumber}"
+    implementation "io.cucumber:datatable:${versionCucumber}"
+    implementation 'org.junit.jupiter:junit-jupiter:5.8.2'
+    implementation 'io.cucumber:cucumber-junit:${versionCucumber}'
+    implementation "net.serenity-bdd:serenity-screenplay:"${versionSerenity}"
+    implementation "net.serenity-bdd:serenity-screenplay-webdriver:${versionSerenity}"
+    implementation "net.serenity-bdd:serenity-junit:${versionSerenity}"
+    implementation "net.serenity-bdd:serenity-core:${versionSerenity}"
+    implementation 'net.serenity-bdd:serenity-report-resources:${versionSerenity}"
+    implementation "net.serenity-bdd:serenity-ensure:${versionSerenity}"
+
+    implementation "org.apache.poi:poi:${versionApachePoi}"
+    implementation "org.apache.poi:poi-ooxml:${versionApachePoi}"
+    implementation group: 'com.oracle.database.jdbc', name: 'ojdbc8', version:'21.3.0.0'
+    implementation group: 'org.assertj', name: 'assertj-core', version: '3.8.0'
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '2.0.0-alpha5'
+    implementation group: 'org.slf4j', name: 'slf4j-simple', version: '2.0.0-alpha5'
+    implementation group: 'org.apache.logging.log4j' name: 'log4j-core', version: '2.18.0'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.4.1'
 }
 
+test{
+    useJUnit{
+        include "**/*"
+        gradle.startParameter.continueOnFailure = true
+        testLogging.showStandardStreams = true
+        systemProperties System.getProperties()
+        systemProperty "cucumber.filter.tags", System.getProperty("cucumber.filter.tags")
+    }
+}
 
-test.finalizedBy(aggregate)
-gradle.startParameter.continueOnFailure = true
